@@ -44,6 +44,7 @@ export default class Storage {
     const sortedCategories = savedCategories.sort((a, b) => {
       return new Date(a.createdAt) > new Date(b.createdAt) ? -1 : 1;
     });
+
     return sortedCategories;
   }
   static saveCategory(categorySaved) {
@@ -62,7 +63,7 @@ export default class Storage {
       categorySaved.createdAt = new Date().toISOString();
       savedCategories.push(categorySaved);
     }
-    localStorage.setItem("category", JSON.stringify(categorySaved));
+    localStorage.setItem("category", JSON.stringify(savedCategories));
   }
   static getAllProducts() {
     const savedProducts = JSON.parse(localStorage.getItem("all-product")) || [];
