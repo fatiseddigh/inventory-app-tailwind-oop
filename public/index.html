@@ -108,6 +108,7 @@
             </div>
             <button
               class="bg-violet-800 text-violet-200 rounded-xl py-2 font-bold"
+              id="add-new-product"
             >
               Add new product
             </button>
@@ -115,45 +116,7 @@
         </div>
         <!-- product list -->
         <h1 class="text-xl text-violet-950 font-bold py-3">Product List</h1>
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-violet-950"> React.js </span>
-          <div class="flex items-center gap-x-3">
-            <span class="text-violet-950">date</span>
-            <span
-              class="block px-3 py-0.5 border border-violet-950 text-sm rounded-2xl text-violet-950"
-              >frontend</span
-            >
-            <span
-              class="flex justify-center items-center w-7 h-7 border-violet-950 rounded-full bg-violet-50 border-2 text-violet-950"
-              >7</span
-            >
-            <button
-              class="border px-2 py-0.5 rounded-2xl border-red-500 text-red-600"
-            >
-              delete
-            </button>
-          </div>
-        </div>
-
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-violet-950"> React.js </span>
-          <div class="flex items-center gap-x-3">
-            <span class="text-violet-950">date</span>
-            <span
-              class="block px-3 py-0.5 border border-violet-950 text-sm rounded-2xl text-violet-950"
-              >frontend</span
-            >
-            <span
-              class="flex justify-center items-center w-7 h-7 border-violet-950 rounded-full bg-violet-50 border-2 text-violet-950"
-              >7</span
-            >
-            <button
-              class="border px-2 py-0.5 rounded-2xl border-red-500 text-red-600"
-            >
-              delete
-            </button>
-          </div>
-        </div>
+        <div id="products-list"></div>
       </div>
     </div>
     <script src="/src/js/app.js" type="module"></script>
