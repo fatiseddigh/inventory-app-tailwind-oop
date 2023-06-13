@@ -127,6 +127,30 @@
             class="bg-violet-300 rounded-xl border border-violet-950 text-violet-950"
           />
         </div>
+        <div class="flex justify-between items-center mb-6">
+          <label for="sort-products" class="text-violet-950 text-lg"
+            >sort</label
+          >
+          <select
+            name="sort-products"
+            id="sort-products"
+            class="bg-violet-300 rounded-xl border border-violet-950 text-violet-950"
+          >
+            <option class="bg-violet-200 text-violet-950" value="">
+              select a category
+            </option>
+            <option
+              class="bg-violet-200 text-violet-950"
+              selected
+              value="newest"
+            >
+              newest
+            </option>
+            <option class="bg-violet-200 text-violet-950" value="oldest">
+              oldest
+            </option>
+          </select>
+        </div>
         <div id="products-list"></div>
       </div>
     </div>
