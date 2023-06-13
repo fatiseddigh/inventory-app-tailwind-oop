@@ -24,50 +24,59 @@
       <!-- app content-->
       <div class="container max-w-screen-sm mx-auto">
         <!-- category form-->
-        <div class="mb-5">
-          <h1 class="text-xl text-violet-950 font-bold py-3">
-            Add New Category
-          </h1>
-          <form class="bg-violet-400 p-4 rounded-xl flex flex-col gap-y-4">
-            <div>
-              <label for="category-title" class="block text-violet-950 mb-1"
-                >category title</label
-              >
-              <input
-                type="text"
-                name="category-title"
-                id="category-title"
-                class="bg-violet-300 rounded-xl border border-violet-950 text-violet-950"
-              />
-            </div>
-            <div>
-              <label
-                for="category-description"
-                class="block text-violet-950 mb-1"
-                >category description</label
-              >
-              <textarea
-                type="text"
-                name="category-description"
-                id="category-description"
-                class="bg-violet-300 rounded-xl border border-violet-950 text-violet-950 w-full"
-              ></textarea>
-            </div>
-            <div class="flex items-center justify-between gap-x-4">
-              <button
-                class="flex-1 border border-violet-800 text-violet-800 rounded-xl py-2 font-bold"
-              >
-                cancel
-              </button>
-              <button
-                class="flex-1 bg-violet-800 text-violet-200 rounded-xl py-2 font-bold"
-                id="add-new-category"
-              >
-                confirm
-              </button>
-            </div>
-          </form>
-        </div>
+        <section>
+          <div class="mb-5 hidden" id="category-wrapper">
+            <h1 class="text-xl text-violet-950 font-bold py-3">
+              Add New Category
+            </h1>
+            <form class="bg-violet-400 p-4 rounded-xl flex flex-col gap-y-4">
+              <div>
+                <label for="category-title" class="block text-violet-950 mb-1"
+                  >category title</label
+                >
+                <input
+                  type="text"
+                  name="category-title"
+                  id="category-title"
+                  class="bg-violet-300 rounded-xl border border-violet-950 text-violet-950"
+                />
+              </div>
+              <div>
+                <label
+                  for="category-description"
+                  class="block text-violet-950 mb-1"
+                  >category description</label
+                >
+                <textarea
+                  type="text"
+                  name="category-description"
+                  id="category-description"
+                  class="bg-violet-300 rounded-xl border border-violet-950 text-violet-950 w-full"
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-between gap-x-4">
+                <button
+                  class="flex-1 border border-violet-800 text-violet-800 rounded-xl py-2 font-bold"
+                  id="cancel-add-category"
+                >
+                  cancel
+                </button>
+                <button
+                  class="flex-1 bg-violet-800 text-violet-200 rounded-xl py-2 font-bold"
+                  id="add-new-category"
+                >
+                  confirm
+                </button>
+              </div>
+            </form>
+          </div>
+          <button
+            id="toggle-add-category"
+            class="text-violet-900 text-lg mb-4 font-medium"
+          >
+            add new category?
+          </button>
+        </section>
         <!-- product form-->
         <div class="mb-5">
           <h1 class="text-xl text-violet-950 font-bold py-3">
