@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", () => {
   CategoryUi.setApp();
   ProductUi.setApp();
   CategoryUi.createCategoryList();
-  ProductUi.createProductList();
+  ProductUi.createProductList(ProductUi.products);
 });
