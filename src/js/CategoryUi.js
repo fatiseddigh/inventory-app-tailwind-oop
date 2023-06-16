@@ -32,7 +32,7 @@ class CategoryUi {
     titleCategory.value = "";
     descriptionCategory.value = "";
     categoryWrapper.classList.add("hidden");
-    toggleAddCategoryBtn.classList.hidden("hidden");
+    toggleAddCategoryBtn.classList.remove("hidden");
   }
   createCategoryList() {
     let result = `<option class="bg-violet-200 text-violet-950" value="">
